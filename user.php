@@ -8,7 +8,6 @@ if (empty($_SESSION["email"]) || $_SESSION["role"] != "user") {
 $page_title = "user";
 include("header.php");
 
-
 ?>
 
 <div class="container-fluid w-25 mt-5">

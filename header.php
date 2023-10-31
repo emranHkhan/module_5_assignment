@@ -15,12 +15,6 @@
             background-color: #F0F0F4;
         }
 
-        /* form i {
-            margin-left: 260px;
-            margin-top: -20px;
-            cursor: pointer;
-        } */
-
         .password-container-div {
             position: relative;
         }

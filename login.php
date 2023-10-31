@@ -30,25 +30,13 @@ if (isset($_POST["submit"])) {
             $data = file_get_contents($filename);
             $decodedData = json_decode($data, true);
             $emails = array_column($decodedData, "email");
-            // $passwords = array_column($decodedData, "password");
             $index = array_search($email, $emails);
-
-            // echo "<pre>";
-            // echo ($decodedData[$index]["password"]) . "<br/>";
-            // echo sha1($password);
-            // echo "</pre>";
-            // die();
-
             $role = empty($decodedData[$index]["role"]) ? "" : $decodedData[$index]["role"];
             $username = $decodedData[$index]["username"];
 
             if (!in_array($email, $emails) || ($decodedData[$index]["password"] != sha1($password))) {
                 array_push($errors, "Invalid email or password.");
             }
-
-            // if (!in_array(sha1($password), $passwords)) {
-            //     array_push($errors, "Invalid password.");
-            // }
         }
     }
 
@@ -107,13 +95,10 @@ if (isset($_POST["submit"])) {
         .querySelector('#togglePassword');
     const password = document.querySelector('#password');
     togglePassword.addEventListener('click', function() {
-        // Toggle the type attribute using
-        // getAttribure() method
         const type = password
             .getAttribute('type') === 'password' ?
             'text' : 'password';
         password.setAttribute('type', type);
-        // Toggle the eye and bi-eye icon
         this.classList.toggle('bi-eye');
     });
 </script>

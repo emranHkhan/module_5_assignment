@@ -58,9 +58,8 @@ if (isset($_POST["submit"]) && isset($_POST["role"])) {
     }
 
     header("Location:admin.php");
+    die();
 }
-
-
 
 ?>
 

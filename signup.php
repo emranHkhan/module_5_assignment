@@ -66,13 +66,27 @@ if (isset($_POST["submit"])) {
             <label for="email" class="form-label">Email address</label>
             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" placeholder="abc@mail.com" value="<?= isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '' ?>">
         </div>
-        <div class="mb-3">
+        <div class="mb-3 password-container-div">
             <label for="password" class="form-label">Password</label>
             <input type="password" class="form-control" id="password" name="password" placeholder="At least 6 characters">
+            <i class="bi bi-eye-slash" id="togglePassword"></i>
         </div>
         <p>Already have an account? <a href="login.php">log in</a></p>
         <button type="submit" class="btn btn-secondary" name="submit">Sign Up</button>
     </form>
 </section>
+
+<script>
+    const togglePassword = document
+        .querySelector('#togglePassword');
+    const password = document.querySelector('#password');
+    togglePassword.addEventListener('click', function() {
+        const type = password
+            .getAttribute('type') === 'password' ?
+            'text' : 'password';
+        password.setAttribute('type', type);
+        this.classList.toggle('bi-eye');
+    });
+</script>
 
 <?php include("footer.php"); ?>

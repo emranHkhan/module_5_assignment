@@ -6,7 +6,6 @@ if ($_SESSION["role"] != "manager") {
     die();
 }
 
-
 $page_title = "manager";
 include("header.php");
 
