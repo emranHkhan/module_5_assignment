@@ -1,0 +1,59 @@
+[
+    {
+        "username": "ImranHKhan",
+        "email": "imranhkhan@gmail.com",
+        "password": "7c4a8d09ca3762af61e59520943dc26494f8941b",
+        "role": "admin"
+    },
+    {
+        "username": "JohnDoe",
+        "email": "johndoe@gmail.com",
+        "password": "cbfdac6008f9cab4083784cbd1874f76618d2a97"
+    },
+    {
+        "username": "AliceSmith",
+        "email": "alicesmith@gmail.com",
+        "password": "8116b23a76f197607369795ced18a49cd55586b7",
+        "role": "manager"
+    },
+    {
+        "username": "SarahJohnson",
+        "email": "sarahjohnson@gmail.com",
+        "password": "57b2ad99044d337197c0c39fd3823568ff81e48a",
+        "role": "admin"
+    },
+    {
+        "username": "MichaelBrown",
+        "email": "michaelbrown@gmail.com",
+        "password": "0c6f6845bb8c62b778e9147c272ac4b5bdb9ae71"
+    },
+    {
+        "username": "EmilyDavis",
+        "email": "emilydavis@gmail.com",
+        "password": "f2b14f68eb995facb3a1c35287b778d5bd785511",
+        "role": "manager"
+    },
+    {
+        "username": "RobertWilson",
+        "email": "robertwilson@gmail.com",
+        "password": "7498f195db6b83ebd93ed30dbab705491e2d0287",
+        "role": "admin"
+    },
+    {
+        "username": "LindaParker",
+        "email": "lindaparker@gmail.com",
+        "password": "7c222fb2927d828af22f592134e8932480637c0d",
+        "role": "user"
+    },
+    {
+        "username": "JamesAnderson",
+        "email": "jamesanderson@gmail.com",
+        "password": "7f6d5eea1bcef5ca6209d33b28e3aaeb3db26f24",
+        "role": "manager"
+    },
+    {
+        "username": "kathy",
+        "email": "katherine@gmail.com",
+        "password": "7c4a8d09ca3762af61e59520943dc26494f8941b"
+    }
+]
